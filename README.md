@@ -4,6 +4,18 @@ An Android and iOS app for listening to the recitations of Sheikh عمر بن ع
 Free, no ads, no accounts, no tracking, and fully usable offline once recordings
 are downloaded.
 
+<p align="center">
+  <img src="design/screens/01-surahs.png" width="24%" alt="سور كاملة">
+  <img src="design/screens/02-clips.png" width="24%" alt="تلاوات">
+  <img src="design/screens/04-player.png" width="24%" alt="المشغّل">
+  <img src="design/screens/08-artwork.png" width="24%" alt="التحكّم من شاشة القفل">
+</p>
+
+## Download
+
+Grab the APK from the [latest release](https://github.com/hammale2003/tilawat-omar-ibn-abdulaziz/releases/latest).
+Use the `arm64` file unless the phone is very old.
+
 ## What's in it
 
 **72 recordings, 8.5 hours**, in three sections:
