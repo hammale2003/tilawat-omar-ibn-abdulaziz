@@ -1,0 +1,14 @@
+The MIT licence in LICENSE covers the application code only.
+
+Recitations
+  The recordings are the work of Sheikh عمر بن عبد العزيز and are included with
+  his permission. They are not covered by the MIT licence and are not
+  redistributed by this repository: the app streams them from the Internet
+  Archive. Permission for any further use is his to give, not ours.
+
+Fonts
+  Amiri and Tajawal are licensed under the SIL Open Font License. The full
+  licence text ships alongside them in assets/fonts/.
+
+Qur'an metadata
+  Surah names, ayah counts and revelation places come from the Quran.com API.
