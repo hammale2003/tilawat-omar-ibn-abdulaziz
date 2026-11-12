@@ -110,6 +110,32 @@ The app asks for it on first play — `_ensureNotificationPermission` in
 visible reason. Playback still works if the listener declines; only the
 lock-screen control is lost.
 
+### iOS
+
+iOS needs more than Android does, and none of it can be skipped:
+
+1. **Xcode** and **CocoaPods** (`brew install cocoapods`). The audio plugins
+   have native iOS code, so the build fails without pods.
+2. **An Apple ID signed into Xcode** — Settings → Accounts → +. Apple requires
+   every app on a device to be signed; `security find-identity -v -p codesigning`
+   reporting "0 valid identities" means this step has not been done.
+3. **The iPhone connected by cable and trusted.**
+
+Then:
+
+```
+flutter build ios --no-codesign     # compile check, no Apple ID needed
+flutter run --release -d <device>   # install onto a connected iPhone
+```
+
+With a **free** Apple ID the installed app stops working after 7 days and must
+be reinstalled from the Mac — an Apple restriction, not a build setting. The
+$99/year Developer Program lifts it and enables TestFlight, which installs over
+the air and lasts 90 days.
+
+An `.apk` cannot be installed on an iPhone under any circumstances; iOS only
+accepts apps signed through Apple's own system.
+
 ## Layout
 
 ```
