@@ -81,6 +81,19 @@ flutter build apk --debug      # or --release for the store
 The debug APK lands in `build/app/outputs/flutter-apk/app-debug.apk` and can be
 sent to any Android phone and installed directly — no Play Store account needed.
 
+## Identity
+
+Both platforms use the same application identifier: **`com.hammale.tilawat`**.
+
+The original `com.tilawa.tilawa` had to be abandoned — Apple refused to register
+it because bundle identifiers are globally unique across every developer
+account, and that one was already taken. It was changed before anything was
+published, since on the App Store an identifier is permanent.
+
+Changing it on Android means an installed build under the old identifier is a
+*different app* to the system: it will not update, and must be uninstalled
+first.
+
 ## Permissions
 
 The app requests exactly six, and every one is needed for playback:

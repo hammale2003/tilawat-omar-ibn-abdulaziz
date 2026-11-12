@@ -1,4 +1,4 @@
-package com.tilawa.tilawa
+package com.hammale.tilawat
 
 import com.ryanheise.audioservice.AudioServiceActivity
 

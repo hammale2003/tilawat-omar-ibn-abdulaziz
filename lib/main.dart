@@ -16,7 +16,7 @@ Future<void> main() async {
   // Registers the background audio service: lock-screen controls, playback
   // that survives the app being backgrounded, headphone and car controls.
   await JustAudioBackground.init(
-    androidNotificationChannelId: 'com.tilawa.audio',
+    androidNotificationChannelId: 'com.hammale.tilawat.audio',
     androidNotificationChannelName: 'التلاوات',
     androidNotificationOngoing: true,
     androidStopForegroundOnPause: true,
