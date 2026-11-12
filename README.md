@@ -13,8 +13,13 @@ are downloaded.
 
 ## Download
 
-Grab the APK from the [latest release](https://github.com/hammale2003/tilawat-omar-ibn-abdulaziz/releases/latest).
+**Android** — grab the APK from the
+[latest release](https://github.com/hammale2003/tilawat-omar-ibn-abdulaziz/releases/latest).
 Use the `arm64` file unless the phone is very old.
+
+**iPhone, iPad, anything else** — open
+<https://hammale2003.github.io/tilawat-omar-ibn-abdulaziz/> and add it to the home screen.
+See [The web app](#the-web-app) below.
 
 ## What's in it
 
@@ -148,6 +153,61 @@ the air and lasts 90 days.
 
 An `.apk` cannot be installed on an iPhone under any circumstances; iOS only
 accepts apps signed through Apple's own system.
+
+Which is why [the web app](#the-web-app) exists: it reaches iPhones with no
+Apple account, no $99, and no seven-day expiry.
+
+## The web app
+
+`docs/` is a self-contained web version of the player, served by GitHub Pages
+at <https://hammale2003.github.io/tilawat-omar-ibn-abdulaziz/>. It exists
+because the App Store costs $99/year and a free Apple ID expires a sideloaded
+build after seven days; a web app has neither limit.
+
+Added to the home screen from Safari it runs full screen with its own icon,
+keeps playing with the screen locked, and shows the recitation on the lock
+screen through the Media Session API. Recordings downloaded in it are stored
+on the device and play back with no network at all.
+
+| | |
+|---|---|
+| Hosting | GitHub Pages — free, no build step, no CI |
+| Audio | streamed straight from archive.org, which sends `access-control-allow-origin: *` |
+| Offline audio | the mp3 is kept as a Blob in IndexedDB and played from a `blob:` URL |
+| Offline shell | `sw.js` caches HTML, CSS, JS, fonts, icons and the catalogue |
+| Stored data | `localStorage` only — resume positions, bookmarks, speed, repeat, theme |
+
+It is **not** a Flutter web build. `path_provider` has no web implementation,
+so downloads would have had to be rewritten regardless, and CanvasKit would
+have meant several megabytes before the first note of audio. This is plain
+HTML, CSS and JavaScript: about 60 KB, plus 272 KB of subsetted fonts.
+
+Offline audio is kept in IndexedDB rather than in a Cache the service worker
+replays, because serving a cached mp3 through a service worker means answering
+HTTP Range requests by hand — and getting that wrong is what breaks seeking and
+lock-screen playback on iOS. A `blob:` URL hands the browser the whole file and
+sidesteps the problem.
+
+### Publishing it
+
+Settings → Pages → Source: *Deploy from a branch*, branch `main`, folder
+`/docs`. Nothing else. The first publish takes a minute or two.
+
+The privacy policy is then live at `…/privacy.html`, which is the public URL
+the Play Console requires — `docs/privacy-policy.md` is the same text in
+Markdown.
+
+### Changing the recordings
+
+`docs/catalog.json` and `docs/surahs.json` are copies of the files in
+`assets/`. After editing the originals:
+
+```
+cp assets/catalog.json assets/surahs.json docs/
+```
+
+Bump `CACHE` in `docs/sw.js` when any shell file changes, or browsers that have
+already cached the old one will keep serving it.
 
 ## Layout
 

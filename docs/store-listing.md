@@ -60,7 +60,7 @@ Listen to the Holy Qur'an. No ads, no accounts, works offline.
 
 | Item | Status |
 |---|---|
-| Privacy policy URL | **you must host `docs/privacy-policy.md` somewhere public** — GitHub Pages is free |
+| Privacy policy URL | `https://hammale2003.github.io/tilawat-omar-ibn-abdulaziz/privacy.html` — live as soon as Pages is enabled on `main` `/docs` |
 | Data safety form | answer "no data collected" to everything; see note below |
 | Content rating questionnaire | reference / books; no objectionable content |
 | Target audience | 13+ (avoids the stricter children's-policy rules) |

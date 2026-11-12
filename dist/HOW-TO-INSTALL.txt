@@ -22,6 +22,17 @@
   • هذه نسخة للتجربة، موقّعة بمفتاح تطوير. قبل النشر على Play
     يجب توقيعها بمفتاح نشر دائم (upload key) — ولا يمكن تغييره بعد ذلك.
 
+الآيفون والآيباد:
+
+  ملفات APK لا تعمل على الآيفون. افتح هذا الرابط في متصفّح Safari:
+
+    https://hammale2003.github.io/tilawat-omar-ibn-abdulaziz/
+
+  ثم اضغط زر المشاركة واختر «إضافة إلى الشاشة الرئيسية».
+  يعمل التطبيق بعدها من أيقونته مباشرة، مع التشغيل في الخلفية،
+  ويمكن تنزيل التلاوات للاستماع إليها دون إنترنت.
+  لا يحتاج إلى حساب Apple ولا إلى أي رسوم.
+
 ---
 
 HOW TO INSTALL (English)
@@ -37,3 +48,13 @@ HOW TO INSTALL (English)
   This is a test build signed with a debug key. Before publishing to
   Play it must be signed with a permanent upload key, which cannot be
   changed afterwards.
+
+  iPhone and iPad:
+
+  An .apk cannot be installed on an iPhone. Open
+
+    https://hammale2003.github.io/tilawat-omar-ibn-abdulaziz/
+
+  in Safari, then press Share and choose "Add to Home Screen". It then
+  runs from its own icon, keeps playing in the background, and can save
+  recitations for offline listening. No Apple account, no fee.
