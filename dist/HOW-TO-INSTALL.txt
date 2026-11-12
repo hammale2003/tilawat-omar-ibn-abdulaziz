@@ -1,0 +1,39 @@
+تلاوات عمر بن عبد العزيز — تثبيت التطبيق
+=========================================
+
+الملفات:
+
+  tilawat-omar-v1.0-arm64.apk            ← استعمل هذا (كل الهواتف الحديثة)
+  tilawat-omar-v1.0-arm32-old-phones.apk ← للهواتف القديمة جداً فقط
+
+التثبيت على الهاتف:
+
+  ١. أرسل الملف إلى الهاتف (واتساب، بريد، أو كابل USB).
+  ٢. افتح الملف من الإشعار أو من مجلد "التنزيلات".
+  ٣. سيحذّرك أندرويد لأن الملف ليس من متجر Play — اضغط
+     "السماح من هذا المصدر" ثم "تثبيت".
+  ٤. افتح التطبيق. لا يحتاج إلى حساب ولا إلى أي أذونات.
+
+ملاحظات:
+
+  • التطبيق يحتاج إنترنت لأول استماع لكل تلاوة. اضغط زر التنزيل
+    بجانب أي تلاوة لحفظها على الجهاز والاستماع إليها دون إنترنت.
+  • لا يجمع التطبيق أي بيانات: بدون حسابات، بدون إعلانات، بدون تتبّع.
+  • هذه نسخة للتجربة، موقّعة بمفتاح تطوير. قبل النشر على Play
+    يجب توقيعها بمفتاح نشر دائم (upload key) — ولا يمكن تغييره بعد ذلك.
+
+---
+
+HOW TO INSTALL (English)
+
+  1. Send the .apk to the phone (WhatsApp, email, or USB cable).
+  2. Open it from the notification or the Downloads folder.
+  3. Android warns that it isn't from the Play Store — tap
+     "Allow from this source", then "Install".
+  4. Open it. No account, no permissions needed.
+
+  Use the arm64 file unless the phone is very old.
+
+  This is a test build signed with a debug key. Before publishing to
+  Play it must be signed with a permanent upload key, which cannot be
+  changed afterwards.
